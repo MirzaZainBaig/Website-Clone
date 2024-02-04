@@ -1,0 +1,29 @@
+.container{
+    height: 300px;
+    width: 90vw;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.box1{
+    height: 30%;
+    width: 10%;
+    background-color: rgb(127, 131, 255); 
+}
+.box2{
+    height: 30%;
+    width: 10%;
+    background-color: rgb(127, 255, 172);
+}
+.box3{
+    height: 30%;
+    width: 10%;
+    background-color: rgb(251, 255, 127);
+}
+.box4{
+    height: 30%;
+    width: 10%;
+    background-color: rgb(255, 127, 244);
+}

@@ -1,0 +1,481 @@
+    /* font-family: 'Tangerine', cursive; */
+    /* font-family: 'Great Vibes', cursive; */
+    /* font-family: 'Mr Dafoe', cursive; */
+    /* font-family: 'Marck Script', cursive; */
+    /* font-family: 'Teko', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 135px;
+    background-color: #222222;
+    font-family: "work sans", Arial, Helvetica, 'Lucida Sans';
+    color: white;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+.logo_img{
+    height: 140px;
+    width: 240px;
+    background-image: url(images/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 18px;
+    cursor: pointer;
+}
+.image{
+    height: 100px;
+    width: 222px;
+}
+.content{
+    font-size: 19px;
+    justify-content: space-around;
+    flex-grow: 2;
+    margin-left: 85px;
+}
+.content ul{
+    display: inline-flex;
+}
+.content ul li{
+    list-style: none;
+    padding: 10px;
+    padding-right: 8px;
+    letter-spacing: 1.5px;
+}
+.content ul li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in;
+}
+.content ul li a:hover{
+    color: red;
+    text-decoration: line-through;
+    transition: all 0.2s ease-in;
+}
+.content .active a{
+    color: red;
+    text-decoration: line-through;
+}
+.content ul li a:focus{
+    text-decoration: none;
+}
+.content ul li p{
+    font-size: 15px;
+    color: red;
+    padding-top: 5px;
+    font-weight: light;
+    cursor: pointer;
+}
+.content ul li p i{
+    font-size: 13px;
+    padding-right: 4px;
+}
+.form{
+    border: 1px solid white;
+    padding: 15px;
+    display: flex;
+}
+.form:hover{
+    border-color: red;
+    /* background-color: red; */
+}
+.form a{
+    margin-right: 10px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    color: white;
+    text-decoration: none;
+}
+.form a:hover{
+    scale: 1.1;
+    text-decoration: none;
+    color: red;
+    transition: all 0.3s ease-in;
+}
+.about_img{
+    height: 330px;
+    width: 100%;
+    background-image: url(images/about_header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 135px;
+}
+.about_img div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    color: white;
+    margin-top: 60px;
+}
+.about_img div a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.about_img div span{
+    font-weight: 1000;
+}
+.about_img div h3{
+    font-size: 65px;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+.about_img div p{
+    line-height: +1.4;
+    letter-spacing: 1.5px;
+    font-size: 24px;
+    font-family: monospace;
+    width: 550px;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.background{
+    position: absolute;
+    top: 460px;
+    width: 100%;
+    background-color: #272727;
+}
+.menu_img_text_1{
+    max-width: 100%;
+    height: 212vh;
+    margin: 100px 120px 50px 120px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: arial;
+    padding: 10px;
+}
+.menu_img_text_1 .menu_img_1{
+    width: 49%;
+    height: 90%;
+    background-image: url("images/img1.jpeg");
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menu_img_text_1 .menu_text_1{
+    width: 48%;
+    height: 90%;
+}
+.menu_img_text_1 .menu_text_1 h3{
+    color: red;
+    font-family: 'Great Vibes', cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.menu_img_text_1 .menu_text_1 h2{
+    font-size: 55px;
+    letter-spacing: 1px;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    line-height: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.menu_img_text_1 .menu_text_1 p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+line-height: +1.5;
+}
+.custom-line {
+    width: 90%; /* Set the width of the line */
+    height: 4px; /* Set the height (thickness) of the line */
+    background-color: red; /* Set the line color */
+    margin: 15px 0; /* Adjust the margin as needed */
+    color: red;
+    border: none;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.custom-line4 {
+    width: 25px; /* Set the width of the line */
+    height: 2px; /* Set the height (thickness) of the line */
+    background-color: red; /* Set the line color */
+    margin: 15px 0; /* Adjust the margin as needed */
+    color: red;
+    border: none;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.column_3{
+    margin: 70px;
+    margin-top: 100px;
+    height: 150vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.column_3 .col_1{
+    width: 45%;
+    height: 100%;
+    font-family: arial;
+    color: white;
+}
+.column_3 .col_1 h3{
+    color: red;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Great Vibes', cursive;
+}
+.column_3 .col_1 h2{
+    font-size: 75px;
+    font-family: 'Teko', sans-serif; 
+    margin-top: 10px;
+    letter-spacing: 2px;
+    line-height: 70px;
+}
+.col_1 p{
+    font-size: 18px;
+    line-height: +1.4;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+.col_1 .award_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.col_1 .award_section i{
+    font-size: 40px;
+    border: 1px solid red;
+    color: red;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.col_1 .award_section div h4{
+    font-family: 'Teko', sans-serif; 
+    margin-bottom: 5px;
+    color: red;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.col_1 .award_section div p{
+    margin-top: 5px;
+}
+.column_3 .col_1 a{
+    padding: 20px 50px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 40px;
+}
+.column_3 .col_1 a:hover{
+    background-color: red;
+    border-color: red;
+}
+.col_2{
+    width: 30%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+.col_2 div{
+    height: 50%;
+    width: 100%;
+    background-image: url("images/contact_img3.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.column_3 .col_3{
+    width: 35%;
+    height: 100%;
+    color: white;
+    font-family: arial;
+}
+.col_3 h1{
+    font-size: 120px;
+    font-weight: bolder;
+    text-align: end;
+}
+.col_3 h2{
+    font-size: 60px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-family: 'Teko', sans-serif;
+    line-height: 60px;
+    text-align: end;
+    margin-bottom: 50px;
+}
+.col_3 hr{
+    margin: 0px 20px;
+}
+.col_3 .main_check{
+    margin-top: 100px;
+}
+.col_3 .main_check .check{
+    display: flex;
+    width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+.col_3 .main_check .check i{
+    color: red;
+    font-size: 30px;
+    margin-right: 20px;
+}
+.col_3 .main_check .check p{
+    font-family: arial;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: +1.4;
+    width: 250px;
+}
+.footer1{
+    /* margin-top: 200px; */
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    color: white;
+}
+.s1, .s2, .s3{
+    height: 400px;
+    width: 32%;
+    padding: 10px;
+}
+.custom-line3{
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.s3 h3, .s1 h3{
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: 'Teko', sans-serif; 
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+.s1 span{
+    font-size: 15px;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+.s1 i{
+    color: red;
+    margin-right: 15px;
+}
+.s1 p{
+    font-size: 18px;
+    font-family: arial;
+    width: 268px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.contact, .email, .location{
+    display: flex;
+    margin-top: 20px;
+}
+.s1 .location #l_adr{
+    font-size: 20px;
+}
+.s2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+.s2 p{
+    margin-top: 10px;
+    width: 240px;
+    font-family: arial;
+    line-height: +1.6;
+    /* font-size: 18px; */
+    text-align: center;
+    font-size: 18px;
+}
+.s2 i{
+    margin-top: 30px;
+    font-size: 40px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.s2 i:hover{
+    filter: drop-shadow(1px 1px 1px white);
+}
+.custom-line4{
+    margin-right: 0px;
+    margin-top: 0px;
+}
+.s3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 30px;
+    text-align: right;
+}
+.s3 ul li{
+    list-style: none;
+}
+.s3 ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: arial;
+    line-height: +2.3;
+    text-align: right;
+    letter-spacing: 1px;
+}
+.s3 ul li a:hover{
+    color: red ;
+    transition: all 0.2s ease;
+}
+.footer2{
+    border-top: 1px solid rgba(255, 255, 255, 0.079);
+    padding: 20px 0px 20px 0px;
+    margin: 10px 80px 10px 80px ;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.footer2 i{
+    margin-right: 5px ;
+    font-size: 15px;
+}
+.footer2 span a{
+    text-decoration: none;
+    color: red;
+}
+.footer2 div a{
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: white;
+    font-size: 15px;
+}
